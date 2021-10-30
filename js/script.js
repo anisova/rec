@@ -56,3 +56,19 @@ swiperPrev.addEventListener('click', () => {
 swiperNext.addEventListener('click', () => {
   swiper.slideNext();
 })
+
+
+//Инициализация  слайдера library
+const videoSwiper = new Swiper('.video-slider', {
+  direction: 'horizontal',
+  loop: true,
+  slideToClickedSlide: true,
+  autoHeight:true,  
+  centeredSlides:true,  
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.video-slider__next',
+    prevEl: '.video-slider__prev',
+  },
+
+});
